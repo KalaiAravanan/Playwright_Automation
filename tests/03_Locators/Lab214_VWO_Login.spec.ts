@@ -16,5 +16,5 @@ test('login functionality',async({page}) => {
 
     await expect(page.locator(".notification-box-description"))
     .toHaveText("Your email, password, IP address or location did not match");
-    
+
 });
