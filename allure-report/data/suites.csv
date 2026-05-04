@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"This test case is to verify the login functionality of VWO application with invalid credentials","11681","login functionality","chromium","Sun May 03 09:40:08 CDT 2026","passed","Sun May 03 09:40:20 CDT 2026","","05_AllureProject\230_Login.spec.ts","",""
