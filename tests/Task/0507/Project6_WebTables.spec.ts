@@ -4,7 +4,7 @@ test('verify element search', async({page}) => {
 
     await page.goto('https://app.thetestingacademy.com/playwright/webtable');
 
-    //search for kabir and click on select cloud qa button
+    //Enter Kabir in the textbox and click the button
     await page.locator('#employee-search').fill('Kabir')
     await page.getByText('Select Cloud QA', { exact: true }).click();
 
@@ -16,8 +16,5 @@ test('verify element search', async({page}) => {
     const checkbox = page.locator('//td[text()="Kabir.Khan"]/preceding-sibling::td//input[@type="checkbox"]');
     await checkbox.check();
     await expect(checkbox).toBeChecked();
-
-    
-    
    
 });
