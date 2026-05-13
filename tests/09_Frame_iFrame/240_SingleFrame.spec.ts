@@ -12,7 +12,10 @@ import { test, expect } from '@playwright/test';
         await frammname.locator('#RESULT_TextField-4').fill('2020');
         await frammname.locator('#RESULT_TextArea-1').fill('Its amazing car with good deal');
 
-        await frammname.locator('#vehicle-submit').click();           
-        await page.waitForTimeout(2000);
+        await frammname.locator('#vehicle-submit').click();   
+        
+        const verifyresult = await frammname.locator('#vehicle-output').innerText();
+        console.log(verifyresult);
 
+        await page.waitForTimeout(2000);
     });

@@ -4,14 +4,8 @@ import { test, expect } from '@playwright/test';
 
         await page.goto('https://app.thetestingacademy.com/playwright/frames/multi-frames');
 
-        let mainframe =await page.frameLocator('[name = 'main']');
-        let h2text = mainframe.locator('h2').innerText();
-        console.log(h2text);
-
-        let sideframe =await page.frameLocator('[name = 'side']');
-
-        
-       Page.getByText(“Click for JS Alert”)
-
-
+        let mainFrame  = page.frameLocator('[name="main"]'); // Playwright Locator
+        let h2text = await mainFrame.locator('h2').innerText();  
+        console.log(h2text);               
+       
     });
