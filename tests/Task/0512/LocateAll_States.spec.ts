@@ -17,5 +17,5 @@ test('All State SVG Project', async ({ page }) => {
         }
     }
     await page.waitForTimeout(2000);
-
+  
 });
